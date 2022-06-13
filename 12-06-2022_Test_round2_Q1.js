@@ -1,3 +1,4 @@
 function standingStudents(heights) {
-    console.log('hii\n');
+    console.log('hii');
+    console.log('hello');
 }
