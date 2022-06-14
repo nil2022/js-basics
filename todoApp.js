@@ -8,12 +8,14 @@ let todoApp = [],isDone = false;
         console.log(`Task${count} added!`);
         return '\n';
     }
-    const deleteTask = () => {
+    const deleteTask = (id) => {
         if(todoApp.length==0){
             console.log(`No tasks available. Please add task first!`);  
+        } else if(id>todoApp.length || id<0){
+            console.log(`No such Task available!`);
         } else {
-            console.log(`Task${todoApp[todoApp.length-1].id} deleted`);
-            todoApp.pop();
+            console.log(`Task${todoApp[id-1].id} deleted`);
+            todoApp.splice(id-1,1);
         }
         return '\n';
     }
@@ -60,8 +62,14 @@ do{
             addTask(task1);
             flag=true;
             break;
-    case '2': deleteTask();
-              flag=true;     
+    case '2': if(todoApp.length==0){
+                console.log(`No tasks available. Please add task first!`);
+            } else {
+              let id = 0;
+              id = prompt('Enter Id to delete : ')
+              deleteTask(id);
+              flag=true; 
+            }    
               break;
     case '3': if(todoApp.length==0){
                 console.log(`No tasks available. Please add task first!`);
