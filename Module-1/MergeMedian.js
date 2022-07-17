@@ -1,4 +1,4 @@
-function MergeSortedArrays(a1,a2){
+function MergeMedian(a1,a2){
     //Create an array
     let res = [], p1=0, p2=0, k=0;
     while(p1 < a1.length && p2 < a2.length){
@@ -30,4 +30,4 @@ function MergeSortedArrays(a1,a2){
     return res;
 }
 
-console.log(MergeSortedArrays([2,4,5,6],[1,3,4,8]))
+console.log(MergeMedian([2,3,6,15],[1,3,4,7,10,12]))

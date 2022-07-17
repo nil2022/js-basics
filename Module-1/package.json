@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "auth": "^0.0.9",
+    "nodemon": "^2.0.19"
+  },
+  "name": "js-basics",
+  "version": "1.0.0",
+  "description": "basics of javascript",
+  "main": "01_07_QuickSort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nil2022/js-basics.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Nilanjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nil2022/js-basics/issues"
+  },
+  "homepage": "https://github.com/nil2022/js-basics#readme"
+}

@@ -18,4 +18,4 @@ function oppNUM(num1,num2)
         return false;
       }
 }
-oppNUM(6,-6)?console.log(`Numbers are opposite signs`):console.log(`Numbers have same signs`);
+oppNUM(6,6)?console.log(`Numbers are opposite signs`):console.log(`Numbers have same signs`);
